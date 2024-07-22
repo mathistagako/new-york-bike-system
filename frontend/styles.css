@@ -1,0 +1,161 @@
+/*PC*/
+
+@media screen and (min-width: 768px) {
+	body {
+		background-color: black;
+	}
+
+	h1 {
+		color: white;
+	}
+
+	.container {
+		display: flex;
+		flex-direction: column;
+		height: 100vh;
+	}
+
+	.navbar {
+		display: flex;
+		justify-content: left;
+		align-items: center;
+		padding: 10px;
+	}
+
+	.search-container {
+		position: relative;
+		margin-left: 15vw;
+	}
+
+	.search-box {
+		border-radius: 1vw;
+		padding: 0.3vw;
+		width: 20vw;
+		height: 2vw;
+		background-color: transparent;
+		color: white;
+		border: 1px solid white;
+	}
+
+	.suggestions-container {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 20vw;
+		background-color: black;
+		list-style: none;
+		padding: 0.5vw;
+		margin: 0;
+		z-index: 2;
+	}
+
+	.suggestions-container li {
+		color: white;
+		padding: 0.3vw;
+		cursor: pointer;
+	}
+
+	.suggestions-container li:hover {
+		background-color: #555;
+	}
+
+	.buttons-container {
+		margin-left: 10vw;
+	}
+
+	.button {
+		border-radius: 1vw;
+		padding: 0.3vw;
+		width: 10vw;
+		height: 2vw;
+		background-color: rgb(255, 255, 105);
+	}
+
+	#map {
+		flex: 1;
+		z-index: 1;
+		height: 700px;
+		width: 100%;
+	}
+}
+
+/*TELEFONO*/
+
+@media screen and (max-width: 767px) {
+	body {
+		background-color: black;
+	}
+
+	h1 {
+		color: white;
+	}
+
+	.search-container {
+		position: relative;
+		margin-left: 15vw;
+	}
+
+	.search-box {
+		border-radius: 1vw;
+		padding: 0.3vw;
+		width: 60vw;
+		height: 5vw;
+		background-color: transparent;
+		color: white;
+		border: 1px solid white;
+	}
+
+	.navbar {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.search-container {
+		margin: 10px 0;
+	}
+
+	.button {
+		width: 80%;
+	}
+
+	.suggestions-container {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 60vw;
+		background-color: black;
+		list-style: none;
+		padding: 0.5vw;
+		margin: 0;
+		z-index: 2;
+	}
+
+	.suggestions-container li {
+		color: white;
+		padding: 0.3vw;
+		cursor: pointer;
+	}
+
+	.suggestions-container li:hover {
+		background-color: #555;
+	}
+
+	.buttons-container {
+		margin-bottom: 5vw;
+	}
+
+	.button {
+		border-radius: 1vw;
+		padding: 0.3vw;
+		width: 30vw;
+		height: 8vw;
+		background-color: rgb(255, 255, 105);
+	}
+
+	#map {
+		flex: 1;
+		z-index: 1;
+		height: 300px;
+		width: 100%;
+	}
+}
